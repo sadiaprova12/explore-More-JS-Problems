@@ -12,3 +12,7 @@ console.log(typeof isIndependent);
 console.log(typeof student);
 console.log(typeof friends);
 console.log(typeof add);
+
+// check array using Array.isArray
+console.log(Array.isArray(friends));
+console.log(typeof add);
