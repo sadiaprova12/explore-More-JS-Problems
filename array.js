@@ -16,3 +16,7 @@ console.log(typeof add);
 // check array using Array.isArray
 console.log(Array.isArray(friends));
 console.log(typeof add);
+
+//----------------
+console.log(friends.includes(19));
+console.log(friends.includes(21));
