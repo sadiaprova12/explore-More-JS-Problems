@@ -1,3 +1,4 @@
+// Handel unexpected function input parameter error
 function add(num1, num2){
     // Validation check process: number na hole ei message asbe 
     if(typeof num1 !== 'number' || typeof num2 !== 'number'){
