@@ -16,9 +16,16 @@
         const price = number * first100Rate;
         return price;
     }
+    else if(number <= 200){
+        const first100Price = 100 * first100Rate;
+        const restTicketQuantity = number - 100;
+        const restTicketPrice = restTicketQuantity * second100Rate;
+        const totalPrice = first100Price + restTicketPrice;
+        return totalPrice;
+    }
 
 }
 
-const price = ticketPrice(1);
+const price = ticketPrice(120);
 console.log('Price: ',  price);
     
