@@ -26,4 +26,5 @@
  }
 
  const totalWood = woodCalculator(2, 2, 5);
+console.log('total wood required: ', totalWood);
 
