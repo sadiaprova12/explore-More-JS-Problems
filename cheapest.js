@@ -1,6 +1,6 @@
 // Find The Cheapest Phone From An Array Of Phone Objects
 
-// [45, 21, ]
+// [45, 21, 6, 98, 56];
 const phones = [
     { name: 'Samsung', camera: 12, storage: '32gb', price: 36000, color: 'silver'},
     { name: 'Walton', camera: 10, storage: '32gb', price: 22000, color: 'silver'},
@@ -12,10 +12,16 @@ const phones = [
 ]
 
 function cheapestPhone(phones){
+    let cheapest = phones[0];
     for(let i = 0; i < phones.length; i++){
         const phone = phones[i];
-        console.log(phones);
+        // console.log(phones);
+        if(phone.price < cheapest.price){
+            cheapest = phone;
+        }
     }
+    return cheapest;
 }
 
 const mySelection = cheapestPhone(phones);
+console.log(mySelection);
