@@ -1,0 +1,27 @@
+// Write Foo, Bar, Foobar If Divisible By 3 Or 5 Or Both
+
+/**
+ * Show output from: 1-50
+ * if the number is divisible by 3 then instead of the number show 'foo'
+ * if the number is divisible by 5 then instead of the number show 'bar'
+ * if the number is divisible by both 3 and 5 then instead of the number show 'foobar'
+ */
+
+for(let i = 1; i<= 50; i++){
+    // if the number is divisible by 5 then instead of the number show 'bar'
+
+ if(i % 5 === 0){
+     console.log('bar');
+ }
+   // if the number is divisible by 3 then instead of the number show 'foo'
+ else if(i % 3 === 0){
+     console.log('foo');
+ }
+ // if the number is divisible by both 3 and 5 then instead of the number show 'foobar'
+ else if(i % 3 === 0 && i % 5 === 0){
+     console.log('foobar');
+ }
+ else{
+ console.log(i);
+ }
+}
