@@ -12,15 +12,24 @@ for(const number of numbers){
 
 const products = [
     {id: 1, name: 'Xiami phone one night', price: 19000},
-    {id: 1, name: 'Iphone', price: 19000},
-    {id: 1, name: 'mac book air', price: 19000},
-    {id: 1, name: 'lenovo yoga laptop 2025', price: 19000},
-    {id: 1, name: 'Dell insprision laptop', price: 19000},
-    {id: 1, name: 'Samsung phone note 7', price: 19000},
-    {id: 1, name: 'Nokia old age phone gone', price: 19000},
-    {id: 1, name: 'Phone one', price: 19000},
+    {id: 2, name: 'Iphone', price: 192000},
+    {id: 3, name: 'mac book air', price: 287000},
+    {id: 4, name: 'lenovo yoga laptop 2025', price: 68000},
+    {id: 5, name: 'Dell insprision laptop', price: 72000},
+    {id: 6, name: 'Samsung phone note 7', price: 188000},
+    {id: 7, name: 'Nokia old age phone gone', price: 17000},
+    {id: 8, name: 'Phone one', price: 10000},
 ];
 
-for(const product of products){
-    console.log(product);
+// for(const product of products){
+//     console.log(product);
+// }
+
+function matchedProducts (product, search){
+    for(const product of products){
+        console.log(product)
+    }
 }
+
+const result = matchedProducts(products, 'phone');
+console.log(result);
