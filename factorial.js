@@ -23,3 +23,5 @@ const result = factorial(5);
  5 * 4 * 3 * 2 * factorial(1)
  5 * 4 * 3 * 2 * 1
  */
+
+ // Ekta function er vitor theke same function ta k jodi ar ekbar call koro tahole seta hocche "Recursion"
