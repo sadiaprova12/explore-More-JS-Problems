@@ -26,9 +26,17 @@ const products = [
 // }
 
 function matchedProducts (product, search){
+    const matched = [];
     for(const product of products){
-        console.log(product)
+        // console.log(product)
+        // if(product.name.includes(search)){
+        //     matched.push(product);
+        // }
+        if(product.name.toLowerCase().includes(search.toLowerCase())){
+            matched.push(product);
+        }
     }
+    return matched;
 }
 
 const result = matchedProducts(products, 'phone');
